@@ -9,12 +9,12 @@ class Fila:
         self._fim: NodoFila | None = None
         self._tamanho: int = 0
 
-    # Insere a figurinha no final da fila
+
     def enqueue(self, figurinha: Figurinha) -> None:
         if not isinstance(figurinha, Figurinha):
             raise TypeError("Apenas objetos Figurinha podem ser enfileirados.")
         novo = NodoFila(figurinha)
-        if self._fim is None:           # fila vazia
+        if self._fim is None:           
             self._inicio = novo
             self._fim = novo
         else:
@@ -22,24 +22,22 @@ class Fila:
             self._fim = novo
         self._tamanho += 1
 
-    # Remove e Retorna a figurinha no inicio da fila
     def dequeue(self) -> Figurinha:
         if self.esta_vazia():
             raise IndexError("Dequeue em fila vazia.")
         figurinha = self._inicio.figurinha
         self._inicio = self._inicio.proximo
-        if self._inicio is None:        # Fila Vazia
+        if self._inicio is None:        
             self._fim = None
         self._tamanho -= 1
         return figurinha
 
-    # Apenas retorna a figurinha para o inicio da fila
+
     def peek(self) -> Figurinha:
         if self.esta_vazia():
             raise IndexError("Peek em fila vazia.")
         return self._inicio.figurinha
 
-    # Limpa a fila
     def limpar(self) -> None:
         self._inicio = None
         self._fim = None
