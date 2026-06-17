@@ -1,10 +1,4 @@
-# Sistema de Álbum de Figurinhas — Copa do Mundo 2026
-
-> **Disciplina:** Estrutura de Dados  
-> **Instituição:** Fatec Rio Claro  
-> **Tema:** Figurinhas da Copa  
-
----
+# Sistema de Álbum de Figurinhas — Copa do Mundo 2026 
 
 ## Descrição
 
