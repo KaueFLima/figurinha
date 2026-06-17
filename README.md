@@ -1,4 +1,4 @@
-# ⚽ Sistema de Álbum de Figurinhas — Copa do Mundo 2026
+# Sistema de Álbum de Figurinhas — Copa do Mundo 2026
 
 > **Disciplina:** Estrutura de Dados  
 > **Instituição:** Fatec Rio Claro  
@@ -6,13 +6,13 @@
 
 ---
 
-## 📋 Descrição
+## Descrição
 
 Sistema de gerenciamento de figurinhas da Copa do Mundo 2026 desenvolvido em Python. Permite colecionarem, trocar e organizar figurinhas de jogadores e seleções, com todas as estruturas de dados implementadas manualmente — sem uso de `list`, `deque` ou qualquer estrutura built-in do Python para listas encadeadas e filas.
 
 ---
 
-## 🗂️ Estrutura de Arquivos
+## Estrutura de Arquivos
 
 ```
 copa2026/
@@ -29,7 +29,7 @@ copa2026/
 
 ---
 
-## 🏗️ Classes Implementadas
+## Classes Implementadas
 
 ### `Figurinha` — `figurinha.py`
 Representa uma figurinha individual do álbum.
@@ -120,7 +120,7 @@ Formato do arquivo:
 
 ---
 
-## ▶️ Como Executar
+## Como Executar
 
 **Pré-requisito:** Python 3.10 ou superior (uso de `X | Y` para type hints).
 
@@ -155,25 +155,25 @@ O sistema carrega automaticamente os dados de `copa2026.json` ao iniciar (se o a
 
 ---
 
-## ⚙️ Requisitos Técnicos Atendidos
+## Requisitos Técnicos Atendidos
 
 | Requisito | Status | Detalhe |
 |-----------|--------|---------|
-| Classe `Figurinha` | ✅ | `figurinha.py` — com validações completas |
-| Classes `NodoLista` e `NodoFila` | ✅ | `nodos.py` — nós encadeados independentes |
-| Classe `Album` (lista encadeada) | ✅ | `album.py` — sem estruturas built-in |
-| Classe `Fila` FIFO própria | ✅ | `fila.py` — enqueue/dequeue O(1) |
-| Classe `Historico` | ✅ | `historico.py` — filas internas próprias |
-| Sem `list`, `deque` ou built-ins | ✅ | Todas as estruturas implementadas com nós |
-| Tratamento de entradas inválidas | ✅ | `ValueError` descritivo em todos os campos |
-| Persistência (JSON) | ✅ | `persistencia.py` — salvar e carregar |
-| Figurinhas repetidas | ✅ | Fila FIFO separada dentro do `Album` |
-| Buscas | ✅ | Por ID, por nome do jogador, por seleção |
-| Trocas | ✅ | Propostas, verificação e troca automática |
+| Classe `Figurinha` | `figurinha.py` — com validações completas |
+| Classes `NodoLista` e `NodoFila` | `nodos.py` — nós encadeados independentes |
+| Classe `Album` (lista encadeada) | `album.py` — sem estruturas built-in |
+| Classe `Fila` FIFO própria | `fila.py` — enqueue/dequeue O(1) |
+| Classe `Historico` | `historico.py` — filas internas próprias |
+| Sem `list`, `deque` ou built-ins | Todas as estruturas implementadas com nós |
+| Tratamento de entradas inválidas | `ValueError` descritivo em todos os campos |
+| Persistência (JSON) | `persistencia.py` — salvar e carregar |
+| Figurinhas repetidas | Fila FIFO separada dentro do `Album` |
+| Buscas | Por ID, por nome do jogador, por seleção |
+| Trocas | Propostas, verificação e troca automática |
 
 ---
 
-## 📐 Diagrama de Classes (simplificado)
+## Diagrama de Classes (simplificado)
 
 ```
 ┌─────────────────┐        ┌─────────────────┐
@@ -219,7 +219,7 @@ O sistema carrega automaticamente os dados de `copa2026.json` ao iniciar (se o a
 
 ---
 
-## 🔒 Validações Implementadas
+## Validações Implementadas
 
 - **ID:** deve ser inteiro positivo
 - **Nome:** não pode ser vazio; máximo 60 caracteres
@@ -230,7 +230,3 @@ O sistema carrega automaticamente os dados de `copa2026.json` ao iniciar (se o a
 - **Propostas:** verifica existência da repetida do solicitante antes de enfileirar
 
 ---
-
-## 👤 Autor
-
-Desenvolvido para a Terceira Avaliação da disciplina de Estrutura de Dados — Fatec Rio Claro.
