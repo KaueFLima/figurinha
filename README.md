@@ -131,11 +131,11 @@ O sistema carrega automaticamente os dados de `copa2026.json` ao iniciar (se o a
 
 ---
 
-## 🖥️ Menu do Sistema
+## Menu do Sistema
 
 ```
 ═══════════════════════════════════════════════════════
-  ⚽  ÁLBUM DA COPA DO MUNDO 2026  ⚽
+    ÁLBUM DA COPA DO MUNDO 2026  
 ═══════════════════════════════════════════════════════
   Figurinhas: 3/640 (0.5%)  |  Repetidas: 1
 ───────────────────────────────────────────────────────
